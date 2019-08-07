@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--ユーザーリスト-->
         <scene sceneID="QH7-ei-yDG">
             <objects>
-                <tableViewController id="OQZ-Co-PHW" sceneMemberID="viewController">
+                <tableViewController id="OQZ-Co-PHW" customClass="TableViewController" customModule="UserListApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="lIu-hU-I7M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,9 +37,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="6o1-Gv-ysj" kind="show" id="91C-ba-9hh"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="IeU-ef-5VK" style="IBUITableViewCellStyleDefault" id="Mmp-1B-JD8">
                                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -57,9 +54,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="6o1-Gv-ysj" kind="show" id="PJw-xh-DLC"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="13M-a8-unn" style="IBUITableViewCellStyleDefault" id="bdt-8m-6rd">
                                         <rect key="frame" x="0.0" y="88" width="414" height="44"/>
@@ -77,9 +71,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="6o1-Gv-ysj" kind="show" id="RCF-Aq-c6k"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="mqn-A0-VdG" style="IBUITableViewCellStyleDefault" id="LQe-z7-I8f">
                                         <rect key="frame" x="0.0" y="132" width="414" height="44"/>
@@ -97,9 +88,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="6o1-Gv-ysj" kind="show" id="4kD-tx-YNN"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="pT3-qW-ZVu" style="IBUITableViewCellStyleDefault" id="VJg-KP-CFc">
                                         <rect key="frame" x="0.0" y="176" width="414" height="44"/>
@@ -117,9 +105,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="6o1-Gv-ysj" kind="show" id="chA-Si-xxB"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="0zx-I4-rUK" style="IBUITableViewCellStyleDefault" id="Z33-a5-vOr">
                                         <rect key="frame" x="0.0" y="220" width="414" height="44"/>
@@ -137,9 +122,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="6o1-Gv-ysj" kind="show" id="KZw-1V-U8k"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="p8K-f8-wOQ" style="IBUITableViewCellStyleDefault" id="kUC-gp-P0I">
                                         <rect key="frame" x="0.0" y="264" width="414" height="44"/>
@@ -157,9 +139,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="6o1-Gv-ysj" kind="show" id="iow-hD-Nsk"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="BhD-jd-lPf" style="IBUITableViewCellStyleDefault" id="Sqn-8R-65H">
                                         <rect key="frame" x="0.0" y="308" width="414" height="44"/>
@@ -177,9 +156,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="6o1-Gv-ysj" kind="show" id="Ndg-eP-qpc"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="aI4-pz-tCn" style="IBUITableViewCellStyleDefault" id="dHj-So-yFj">
                                         <rect key="frame" x="0.0" y="352" width="414" height="44"/>
@@ -197,9 +173,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="6o1-Gv-ysj" kind="show" id="9hV-rv-005"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="qeB-o6-pmW" style="IBUITableViewCellStyleDefault" id="04L-A8-GuL">
                                         <rect key="frame" x="0.0" y="396" width="414" height="44"/>
@@ -217,9 +190,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="6o1-Gv-ysj" kind="show" id="5jC-CB-b2l"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="zCS-eJ-uzE" style="IBUITableViewCellStyleDefault" id="IAe-PY-H8z">
                                         <rect key="frame" x="0.0" y="440" width="414" height="44"/>
@@ -237,9 +207,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="6o1-Gv-ysj" kind="show" id="yDD-cg-CmJ"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="XNO-Dk-RWY" style="IBUITableViewCellStyleDefault" id="0dX-NF-sap">
                                         <rect key="frame" x="0.0" y="484" width="414" height="44"/>
@@ -257,9 +224,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="6o1-Gv-ysj" kind="show" id="OYj-mA-RJs"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Rm1-pG-ppa" style="IBUITableViewCellStyleDefault" id="BHl-et-B8y">
                                         <rect key="frame" x="0.0" y="528" width="414" height="44"/>
@@ -277,9 +241,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="6o1-Gv-ysj" kind="show" id="zu8-R6-F94"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="EAX-FP-svd" style="IBUITableViewCellStyleDefault" id="gU8-uO-W5c">
                                         <rect key="frame" x="0.0" y="572" width="414" height="44"/>
@@ -297,9 +258,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="6o1-Gv-ysj" kind="show" id="Mbx-yn-hNw"/>
-                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -309,20 +267,67 @@
                             <outlet property="delegate" destination="OQZ-Co-PHW" id="yCM-n2-rFz"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="4hr-zw-2i3"/>
+                    <navigationItem key="navigationItem" title="ユーザーリスト" id="4hr-zw-2i3"/>
+                    <connections>
+                        <segue destination="6o1-Gv-ysj" kind="show" identifier="showData" id="3g2-I9-g3r"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n0a-jz-5xM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-90" y="92"/>
         </scene>
-        <!--View Controller-->
+        <!--ユーザーデータ-->
         <scene sceneID="YI3-xP-5Iq">
             <objects>
-                <viewController id="6o1-Gv-ysj" customClass="ViewController" customModule="UserListApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="ユーザーデータ" id="6o1-Gv-ysj" customClass="ViewController" customModule="UserListApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SDU-Hz-Ayz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jnl-7K-Fa0">
+                                <rect key="frame" x="0.0" y="88" width="414" height="24"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REo-q0-l9c">
+                                <rect key="frame" x="0.0" y="112" width="414" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="趣味" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9W-zR-lHc">
+                                <rect key="frame" x="0.0" y="136" width="414" height="24"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="POc-5c-nkl">
+                                <rect key="frame" x="0.0" y="160" width="414" height="702"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="c2c-Rg-vpp" firstAttribute="trailing" secondItem="REo-q0-l9c" secondAttribute="trailing" id="3hl-9S-QjU"/>
+                            <constraint firstItem="REo-q0-l9c" firstAttribute="top" secondItem="Jnl-7K-Fa0" secondAttribute="bottom" id="6W0-lB-r1E"/>
+                            <constraint firstItem="POc-5c-nkl" firstAttribute="top" secondItem="i9W-zR-lHc" secondAttribute="bottom" id="Fup-jE-Fxk"/>
+                            <constraint firstItem="c2c-Rg-vpp" firstAttribute="trailing" secondItem="i9W-zR-lHc" secondAttribute="trailing" id="GVx-rJ-23p"/>
+                            <constraint firstItem="i9W-zR-lHc" firstAttribute="top" secondItem="REo-q0-l9c" secondAttribute="bottom" id="I23-y6-c62"/>
+                            <constraint firstItem="c2c-Rg-vpp" firstAttribute="trailing" secondItem="POc-5c-nkl" secondAttribute="trailing" id="IbV-X2-xFQ"/>
+                            <constraint firstItem="Jnl-7K-Fa0" firstAttribute="leading" secondItem="c2c-Rg-vpp" secondAttribute="leading" id="LQf-g2-Zcg"/>
+                            <constraint firstItem="POc-5c-nkl" firstAttribute="leading" secondItem="c2c-Rg-vpp" secondAttribute="leading" id="ONJ-NS-ute"/>
+                            <constraint firstItem="i9W-zR-lHc" firstAttribute="leading" secondItem="c2c-Rg-vpp" secondAttribute="leading" id="ONz-yf-uDp"/>
+                            <constraint firstItem="c2c-Rg-vpp" firstAttribute="bottom" secondItem="POc-5c-nkl" secondAttribute="bottom" id="Rji-dW-dqa"/>
+                            <constraint firstItem="Jnl-7K-Fa0" firstAttribute="top" secondItem="c2c-Rg-vpp" secondAttribute="top" id="VIP-mw-EL6"/>
+                            <constraint firstItem="c2c-Rg-vpp" firstAttribute="trailing" secondItem="Jnl-7K-Fa0" secondAttribute="trailing" id="Vrn-XM-NsZ"/>
+                            <constraint firstItem="REo-q0-l9c" firstAttribute="leading" secondItem="c2c-Rg-vpp" secondAttribute="leading" id="dlZ-co-vzx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="c2c-Rg-vpp"/>
                     </view>
                 </viewController>
@@ -347,7 +352,4 @@
             <point key="canvasLocation" x="-768" y="92"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="OYj-mA-RJs"/>
-    </inferredMetricsTieBreakers>
 </document>
