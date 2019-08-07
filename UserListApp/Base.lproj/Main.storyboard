@@ -330,6 +330,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="c2c-Rg-vpp"/>
                     </view>
+                    <connections>
+                        <outlet property="hobbyTextView" destination="POc-5c-nkl" id="iAC-bR-7PL"/>
+                        <outlet property="nameLabel" destination="REo-q0-l9c" id="gUT-kV-J0O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P0D-zZ-mh2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
