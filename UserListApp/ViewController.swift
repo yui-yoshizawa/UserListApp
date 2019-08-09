@@ -10,7 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
     @IBOutlet weak var nameLabel: UILabel!
     
     @IBOutlet weak var hobbyTextView: UITextView!
@@ -62,10 +61,6 @@ class ViewController: UIViewController {
     let hobby13: String = "ゲームが大好き。特にドラクエをこよなく愛しており、2018年の夏休みは約200時間をドラクエに費やした。他にもピアノや海外旅行や読書など様々な趣味がある。"
     
    
-            
-    
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
         result()    // キターーー！！！！ 場所ここ以外にしたら怒られた。

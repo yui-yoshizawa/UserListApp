@@ -10,27 +10,20 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
-    
     var selectNum: Int = 0    // // 遷移先に値を渡す時につかう
     
-
-   
-
     // セクションの数いくつにしますか〜？
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1    // ここ0にしたらセル表示されなくなった。
     }
 
-    
     // セルの数いくつにしますか〜？
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 14
     }
 
-    
-    
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
@@ -48,10 +41,6 @@ class TableViewController: UITableViewController {
         guard segue.identifier == "showData", let vc = segue.destination as? ViewController else {
             return
         }
-        
         vc.select = selectNum    // 遷移先の select に selectNum を代入
     }
-    
-
-
 }
